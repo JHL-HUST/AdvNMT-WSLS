@@ -4,9 +4,13 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,macos,python
 
 aux_files/
-corpus/
-dumped/
+corpus/wmt19/jobs
+dumped/before
+dumped/en_de_en
+dumped/warnings
 models/Transformer/en-de-en
+*.tar.gz
+
 
 ### macOS ###
 # General

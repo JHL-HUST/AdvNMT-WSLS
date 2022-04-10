@@ -1,0 +1,1 @@
+fairseq-generate data-bin --path checkpoints/checkpoint_best.pt --remove-bpe
