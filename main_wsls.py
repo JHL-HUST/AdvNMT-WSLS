@@ -36,7 +36,7 @@ if __name__ == "__main__":
     logger.info('Current oracle: '+params.oracle)
     logger.info('Current rand_ration: {}'.format(params.rand_ratio))
 
-    print('wsls init path: ', "./gogr_res/job{}/data/".format(params.job))
+    print('wsls init path: ', "./dumped/en_de_en/transformer/gogr_res/job{}/data/".format(params.job))
 
     AdvNMT = AttackerWrapper(
         src_path=src_path,
@@ -50,7 +50,7 @@ if __name__ == "__main__":
         oracle=params.oracle,
         random_ratio=params.rand_ratio,
         togpu=params.togpu,
-        init_dir="./gogr_res/job{}/data/".format(params.job)
+        init_dir="./dumped/en_de_en/transformer/gogr_res/job{}/data/".format(params.job)
     )
 
     AdvNMT.attack_wsls()

@@ -3,14 +3,6 @@
 We provide code for the ACL2021 Paper: *Crafting Adversarial Examples for Neural Machine Translation* \
 Xinze Zhang, Junzhe Zhang, Zhenhua Chen, Kun He
 
-## Attention
-
-
---2022-03-14--
-The code is under maintenance to enhance its readability, and the final version will be updated in the next few weeks, as soon as possible.
-
-For replication, if you have any questions of the code details, please contact xinze (xinze@hust.edu.cn), the first author of this paper.
-
 ## Environment
 - Pos_OS 20.04.LTS
 - Python 3.6
@@ -32,16 +24,20 @@ Due to the space limitation of the github, some auxiliary files, especially the 
 
 And the pre-trained BERT models, i.e., the uncased whole word masked models, used in this work, had the effective web-link when this work was just published. But these links are not available directly for now (2022 Apr.) becasue of some unknown reasons. To tackle this issue, you need search the model name in https://huggingface.co/models .
 
-Hence, for the replication, we provide these necessary files in the cloud. You need download these files as follows and copy them to the corresponding path (cop_path) to finish the pre-installation procedure.
+Hence, for the replication, we provide these necessary files in the Google Drive. You need download these files as follows and copy them to the corresponding path (cop_path) to finish the pre-installation procedure.
 
 
-| file_name | cop_path | web_link | remark|
-| --------- | ------ | -------- | -------- |
-|           |        |          |          |
-|           |        |          |          |
-|           |        |          |          |
+| File_name                   | Cop_path                                |                                           Web_link                                          | Remark                     |
+|-----------------------------|-----------------------------------------|:-------------------------------------------------------------------------------------------:|----------------------------|
+| en_core_web_sm-2.2.0.tar.gz | ./aux_files/en_core_web_sm-2.2.0.tar.gz | [click here](https://drive.google.com/file/d/1i29J4gPAInJwNA1cVdhQWZKdkra41ts9/view?usp=sharing) | Provided by Spacy.          |
+| googleNewsWV.bin            | ./aux_files/googleNewsWV.bin            | [click here](https://drive.google.com/file/d/1JajjfxDtB9zBL1F_RzWdIBPHGazcYuIb/view?usp=sharing) | Pre-trained by Google.      |
+| en-de-en.tar.gz             | ./models/Transformer/en-de-en           | [click here](https://drive.google.com/file/d/1ugFZBRjRqbn7wZpiORG2dmZe_ANLyX5O/view?usp=sharing) | It's a folder, unzip first. |
+| jobs.tar.gz                 | ./corpus/wmt19/jobs                     | [click here](https://drive.google.com/file/d/1UPokk3xDv2vbaz21nceczehBdNw4x1wD/view?usp=sharing) | It's a folder, unzip first. |
+| test.en                     | ./corpus/wmt19/test.en                  | [click here](https://drive.google.com/file/d/1wuVr7bNocGASkoyx77nteE3wkaERJ4_J/view?usp=sharing) | Provided by WMT19.         |
+| test.de                     | ./corpus/wmt19/test.de                    | [click here](https://drive.google.com/file/d/1e5xkUxkcfM8Ci0vrzp0A2oeIHpfZ9FgY/view?usp=sharing) | Provided by WMT19.         |
+| wwm_uncased                    | ./aux_files/wwm_uncased                  | [click here](https://huggingface.co/bert-large-uncased-whole-word-masking/blob/main/pytorch_model.bin) | Pre-trained by Google.         |
 
-
+Due to the space limitation of Google Drive and the huge size of the NMT models as well as word-vector models, we only upload the model files related to en-de experiment. For the model files about other experiments, please contact the code [contributor](https://github.com/XinzeZhang) of this repository.
 
 ### Installation
 - pickle
@@ -71,3 +67,18 @@ Hence, for the replication, we provide these necessary files in the cloud. You n
   pip install --editable ./
   ```
   where  `en_core_web_sm-2.2.0.tar.gz` can be downloaded in the [link](https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#egg=en_core_web_sm==2.2.0)
+
+## Usage
+
+- Conduct the pre-installation and installation precedures to download the necessary files as well as configure the dependencies.
+- Use `corpus/wmt19/split.py` to split the test set into many small job sets to accelerate the experiments with executing main file on different small jobs in parallel (you can also download the job sets directly as introduced in pre-installation).
+- Run `main_rorr.py` or use command like `python main_rorr.py -job 0`, where `-job 0` can be replaced to any job id x, such as `-job x`, and `main_rorr.py` can be replaced to `main_rogr.py` and `main_gogr.py` to conduct the specific attack method.
+- Before runing `main_wsls.py`, `main_gogr.py` need be executed first to initialize the adversarial example, then executing the shell script `bash dumped/data_move.sh` to copy the GOGR results to the right place for runing the rest of the proposed WSLS method. After that, run `main_wsls.py` or use command like `python main_wsls.py -job 0`, where `-job 0` can be replaced to any job id x, such as `-job x`.
+
+
+## Contact
+For replication, if you have any questions of the code details, please contact xinze (xinze@hust.edu.cn), the first author of this paper.
+
+--2022-04-10--
+
+The code is under maintenance to enhance its readability.
