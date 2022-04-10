@@ -2,7 +2,6 @@ import os
 from nltk.translate.bleu_score import corpus_bleu,SmoothingFunction, sentence_bleu
 
 import pkuseg
-
 seg = pkuseg.pkuseg() 
 
 def lineCount(data_path):

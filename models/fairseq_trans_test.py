@@ -1,6 +1,6 @@
 import os
 from fairseq.models.transformer import TransformerModel
-
+import torch
 
 class fairseq_translator():
     def __init__(self, src_lang='en', tgt_lang='de', beam_num=10, state_name='',
@@ -25,7 +25,7 @@ class fairseq_translator():
                     bpe_codes=code_path
                 )
         
-        if togpu:
+        if togpu and torch.cuda.is_available():
             self.model.cuda()
 
     def translate(self, src):

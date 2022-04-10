@@ -19,7 +19,8 @@ from spacy_cld import LanguageDetector
 
 
 from tools.utility import line2seg
-
+import pkuseg
+seg = pkuseg.pkuseg() 
 
 # Please add yourself BAIDU_APPID and the KEY.
 BAIDU_APPID = '***'
