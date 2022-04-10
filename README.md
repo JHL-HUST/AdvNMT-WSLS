@@ -35,7 +35,7 @@ Hence, for the replication, we provide these necessary files in the Google Drive
 | jobs.tar.gz                 | ./corpus/wmt19/jobs                     | [click here](https://drive.google.com/file/d/1UPokk3xDv2vbaz21nceczehBdNw4x1wD/view?usp=sharing) | It's a folder, unzip first. |
 | test.en                     | ./corpus/wmt19/test.en                  | [click here](https://drive.google.com/file/d/1wuVr7bNocGASkoyx77nteE3wkaERJ4_J/view?usp=sharing) | Provided by WMT19.         |
 | test.de                     | ./corpus/wmt19/test.de                    | [click here](https://drive.google.com/file/d/1e5xkUxkcfM8Ci0vrzp0A2oeIHpfZ9FgY/view?usp=sharing) | Provided by WMT19.         |
-| wwm_uncased                    | ./aux_files/wwm_uncased                  | [click here](https://huggingface.co/bert-large-uncased-whole-word-masking/blob/main/pytorch_model.bin) | Pre-trained by Google.         |
+
 
 Due to the space limitation of Google Drive and the huge size of the NMT models as well as word-vector models, we only upload the model files related to en-de experiment. For the model files about other experiments, please contact the code [contributor](https://github.com/XinzeZhang) of this repository.
 
@@ -74,6 +74,7 @@ Due to the space limitation of Google Drive and the huge size of the NMT models 
 - Use `corpus/wmt19/split.py` to split the test set into many small job sets to accelerate the experiments with executing main file on different small jobs in parallel (you can also download the job sets directly as introduced in pre-installation).
 - Run `main_rorr.py` or use command like `python main_rorr.py -job 0`, where `-job 0` can be replaced to any job id x, such as `-job x`, and `main_rorr.py` can be replaced to `main_rogr.py` and `main_gogr.py` to conduct the specific attack method.
 - Before runing `main_wsls.py`, `main_gogr.py` need be executed first to initialize the adversarial example, then executing the shell script `bash dumped/data_move.sh` to copy the GOGR results to the right place for runing the rest of the proposed WSLS method. After that, run `main_wsls.py` or use command like `python main_wsls.py -job 0`, where `-job 0` can be replaced to any job id x, such as `-job x`.
+- The pre-trained BERT model used in this work would be auto-downloaded to the cache folder when the code is executed at first time.
 
 
 ## Contact
