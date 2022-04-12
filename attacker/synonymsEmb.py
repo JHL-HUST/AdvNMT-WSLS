@@ -5,7 +5,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), os.path.pardir))
 import string
 
 from gensim.models import KeyedVectors
-
+# from gensim.test.utils import datapath
 
 def word_check(w):
     '''
@@ -45,6 +45,7 @@ def word_check(w):
 class synonym():
     def __init__(self, wv_path='./aux_files/googleNewsWV.bin'):
         self.model = KeyedVectors.load(wv_path,mmap='r')
+        # self.model = KeyedVectors.load_word2vec_format(datapath(wv_path),binary=True)
     
     def neighbors(self,word,K):
         word = word.lower()
