@@ -24,9 +24,9 @@ Due to the space limitation of the github, some auxiliary files, especially the 
 
 And the pre-trained BERT models, i.e., the uncased whole word masked models, used in this work, had the effective web-link when this work was just published. But these links are not available directly for now (2022 Apr.) becasue of some unknown reasons. To tackle this issue, you need search the model name in https://huggingface.co/models .
 
-Hence, for the replication, we provide these necessary files in the Google Drive. You need download these files as follows and copy them to the corresponding path (cop_path) to finish the pre-installation procedure.
+Hence, for the replication, we provide these necessary files in the Google Drive. You need download these files as follows and copy them to the corresponding path (cor_path) to finish the pre-installation procedure.
 
-|File_name| Cop_path             | Link|    Remark            |
+|File_name| Cor_path             | Link|    Remark            |
 |-----------------|--------------------|:--------:|--------|
 | en_core_web_sm-2.2.0.tar.gz | ./aux_files/en_core_web_sm-2.2.0.tar.gz | [Click here](https://drive.google.com/file/d/1i29J4gPAInJwNA1cVdhQWZKdkra41ts9/view?usp=sharing) | Provided by Spacy.          |
 | googleNewsWV.bin.vectors.npy.tar.gz         | ./aux_files/googleNewsWV.bin.vectors.npy            | [Click here](https://drive.google.com/file/d/1C7edw_4pNZNgrCchGhS_wnjFGB5KUrXD/view?usp=sharing) | Pre-trained by Google. It's a file, unzip first.     |
