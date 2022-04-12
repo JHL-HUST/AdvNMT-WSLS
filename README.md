@@ -28,12 +28,12 @@ Hence, for the replication, we provide these necessary files in the Google Drive
 
 |File_name| Cop_path             | Link|    Remark            |
 |-----------------|--------------------|:--------:|--------|
-| en_core_web_sm-2.2.0.tar.gz | ./aux_files/en_core_web_sm-2.2.0.tar.gz | [click here](https://drive.google.com/file/d/1i29J4gPAInJwNA1cVdhQWZKdkra41ts9/view?usp=sharing) | Provided by Spacy.          |
-| googleNewsWV.bin.vectors.npy.tar.gz         | ./aux_files/googleNewsWV.bin.vectors.npy            | [click here](https://drive.google.com/file/d/1C7edw_4pNZNgrCchGhS_wnjFGB5KUrXD/view?usp=sharing) | Pre-trained by Google. It's a file, unzip first.     |
-| en-de-en.tar.gz             | ./models/Transformer/en-de-en           | [click here](https://drive.google.com/file/d/1ugFZBRjRqbn7wZpiORG2dmZe_ANLyX5O/view?usp=sharing) | Pre-trained by FAIR. It's a folder, unzip first. |
-| jobs.tar.gz                 | ./corpus/wmt19/jobs                     | [click here](https://drive.google.com/file/d/1UPokk3xDv2vbaz21nceczehBdNw4x1wD/view?usp=sharing) | It's a folder, unzip first. |
-| test.en                     | ./corpus/wmt19/test.en                  | [click here](https://drive.google.com/file/d/1wuVr7bNocGASkoyx77nteE3wkaERJ4_J/view?usp=sharing) | Provided by WMT19.         |
-| test.de                     | ./corpus/wmt19/test.de                    | [click here](https://drive.google.com/file/d/1e5xkUxkcfM8Ci0vrzp0A2oeIHpfZ9FgY/view?usp=sharing) | Provided by WMT19.         |
+| en_core_web_sm-2.2.0.tar.gz | ./aux_files/en_core_web_sm-2.2.0.tar.gz | [Click here](https://drive.google.com/file/d/1i29J4gPAInJwNA1cVdhQWZKdkra41ts9/view?usp=sharing) | Provided by Spacy.          |
+| googleNewsWV.bin.vectors.npy.tar.gz         | ./aux_files/googleNewsWV.bin.vectors.npy            | [Click here](https://drive.google.com/file/d/1C7edw_4pNZNgrCchGhS_wnjFGB5KUrXD/view?usp=sharing) | Pre-trained by Google. It's a file, unzip first.     |
+| en-de-en.tar.gz             | ./models/Transformer/en-de-en           | [Click here](https://drive.google.com/file/d/1ugFZBRjRqbn7wZpiORG2dmZe_ANLyX5O/view?usp=sharing) | Pre-trained by FAIR. It's a folder, unzip first. |
+| jobs.tar.gz                 | ./corpus/wmt19/jobs                     | [Click here](https://drive.google.com/file/d/1UPokk3xDv2vbaz21nceczehBdNw4x1wD/view?usp=sharing) | It's a folder, unzip first. |
+| test.en                     | ./corpus/wmt19/test.en                  | [Click here](https://drive.google.com/file/d/1wuVr7bNocGASkoyx77nteE3wkaERJ4_J/view?usp=sharing) | Provided by WMT19.         |
+| test.de                     | ./corpus/wmt19/test.de                    | [Click here](https://drive.google.com/file/d/1e5xkUxkcfM8Ci0vrzp0A2oeIHpfZ9FgY/view?usp=sharing) | Provided by WMT19.         |
 
 
 Due to the space limitation of Google Drive and the huge size of the NMT models as well as word-vector models, we only upload the model files related to en-de experiment. For the model files about other experiments, please contact the code [contributor](https://github.com/XinzeZhang) of this repository.
