@@ -26,8 +26,23 @@ And the pre-trained BERT models, i.e., the uncased whole word masked models, use
 
 Hence, for the replication, we provide these necessary files in the Google Drive. You need download these files as follows and copy them to the corresponding path (cop_path) to finish the pre-installation procedure.
 
+<style>
+table th:first-of-type {
+    width: 35%;
+}
+table th:nth-of-type(2) {
+    width: 35%;
+}
+table th:nth-of-type(3) {
+    width: 5%;
+}
+table th:nth-of-type(4) {
+    width: 25%;
+}
+</style>
 
-| File_name                   | Cop_path                                |                                           Web_link                                          | Remark                     |
+
+|  File_name                   | Cop_path                                |                                           Web_link                                          | Remark                     |
 |-----------------------------|-----------------------------------------|:-------------------------------------------------------------------------------------------:|----------------------------|
 | en_core_web_sm-2.2.0.tar.gz | ./aux_files/en_core_web_sm-2.2.0.tar.gz | [click here](https://drive.google.com/file/d/1i29J4gPAInJwNA1cVdhQWZKdkra41ts9/view?usp=sharing) | Provided by Spacy.          |
 | googleNewsWV.bin.vectors.npy.tar.gz         | ./aux_files/googleNewsWV.bin.vectors.npy            | [click here](https://drive.google.com/file/d/1C7edw_4pNZNgrCchGhS_wnjFGB5KUrXD/view?usp=sharing) | Pre-trained by Google. It's a file, unzip first.     |
