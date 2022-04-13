@@ -29,6 +29,7 @@ Hence, for the replication, we provide these necessary files in the Google Drive
 |File_name| Cor_path             | Link|    Remark            |
 |-----------------|--------------------|:--------:|--------|
 | en_core_web_sm-2.2.0.tar.gz | ./aux_files/en_core_web_sm-2.2.0.tar.gz | [Click here](https://drive.google.com/file/d/1i29J4gPAInJwNA1cVdhQWZKdkra41ts9/view?usp=sharing) | Provided by Spacy.          |
+| googleNewsWV.bin         | ./aux_files/googleNewsWV.bin            | [Click here](https://drive.google.com/file/d/1JajjfxDtB9zBL1F_RzWdIBPHGazcYuIb/view?usp=sharing) | Pre-trained by Google.  |
 | googleNewsWV.bin.vectors.npy.tar.gz         | ./aux_files/googleNewsWV.bin.vectors.npy            | [Click here](https://drive.google.com/file/d/1C7edw_4pNZNgrCchGhS_wnjFGB5KUrXD/view?usp=sharing) | Pre-trained by Google. It's a file, unzip first.     |
 | en-de-en.tar.gz             | ./models/Transformer/en-de-en           | [Click here](https://drive.google.com/file/d/1ugFZBRjRqbn7wZpiORG2dmZe_ANLyX5O/view?usp=sharing) | Pre-trained by FAIR. It's a folder, unzip first. |
 | jobs.tar.gz                 | ./corpus/wmt19/jobs                     | [Click here](https://drive.google.com/file/d/1UPokk3xDv2vbaz21nceczehBdNw4x1wD/view?usp=sharing) | It's a folder, unzip first. |
