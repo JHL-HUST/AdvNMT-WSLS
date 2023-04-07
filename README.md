@@ -81,5 +81,3 @@ Due to the space limitation of Google Drive and the huge size of the NMT models 
 For replication, if you have any questions of the code details, please contact xinze (xinze@hust.edu.cn), the first author of this paper.
 
 --2022-04-10--
-
-The code is under maintenance to enhance its readability.
